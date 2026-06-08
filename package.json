@@ -1,0 +1,8 @@
+{
+  "name": "sri-murugan-finance",
+  "version": "1.0.0",
+  "description": "Sri Murugan Finance Lending Portal",
+  "scripts": {
+    "dev": "npx concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""
+  }
+}

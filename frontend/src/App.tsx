@@ -19,6 +19,7 @@ import {
   Trash2
 } from 'lucide-react';
 import { translations } from './utils/translation';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import type { Language } from './utils/translation';
 import scanQrCodeImg from './assets/scanqrcode.jpg';
 
@@ -906,6 +907,8 @@ export default function App() {
   }
 
   return (
+    <>
+      <SpeedInsights />
     <div className="flex h-screen overflow-hidden bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
       <aside className="hidden w-64 border-r border-slate-200 bg-white/70 dark:border-slate-800 dark:bg-slate-900/60 md:flex md:flex-col md:justify-between backdrop-blur-md">
         <div>
@@ -2032,5 +2035,6 @@ export default function App() {
         </div>
       )}
     </div>
+    </>
   );
 }
